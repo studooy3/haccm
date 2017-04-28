@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>HACCM</title>
+    {% load staticfiles %}
+
+    <!-- Bootstrap core CSS -->
+   <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/carousel.css" rel="stylesheet">
+    <style>
+        /*a {font-size: 12px}*/
+        .featurette-heading { font-size: 30px;}
+      
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Organization</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'resource' %}"">Resource</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Contact</a>
+          </li>
+        </ul>
+        <!--<form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+    <div class="container">
+        <h1 style="margin-top: 40px">About Us</h1>
+        <hr style="height:4px;border-top:4px solid #f00; margin-top: 5px;" />
+    
+        <div class="row" style="margin-left: 30px;">
+            <div class="col-med-2">
+              
+                  <h4 style="margin-left: 14px; margin-top: 25px">Mission</h4>  
+                  
+            </div>
+            <div class="col-med-8">
+                <blockquote class="blockquote" style="margin-left:15px;">
+                  
+              <p class="mb-0">We are the premier organization to convene Haitian American professionals and businesses by providing </p>
+              <p>quality programming and resources to advocate and stimulate economic growth in Massachusetts.</p>
+         </blockquote>
+            </div>
+        </div>
+         <div class="row"style="margin-left: 30px;">
+            <div class="col-med-2">
+              
+                  <h4 style="margin-left: 14px; margin-top: 10px" >Purpose</h4>  
+                  
+            </div>
+            <div class="col-med-8">
+                <blockquote class="blockquote" style="margin-left:9px;" >
+                  
+                    <p class="mb-0">To make Massachusetts a place where Haitian American professionals and businesses excel</p>
+                </blockquote>
+            </div>
+        </div>
+               <div class="row" style="margin-left: 30px;">
+            <div class="col-med-2">
+              
+                  <h4 style="margin-left: 14px; margin-top: 70px">Values</h4>  
+                  
+            </div>
+            <div class="col-med-8">
+                <blockquote class="blockquote" style="margin-left: 26.5px;">
+                  
+                    <p class="mb-0">We are committed to:</p>
+                    <ul class="list-unstyled">
+                        <ul style="margin-left: 30px;">
+                            <li>
+                              Strengthening the ties
+                            </li>
+                            <li>
+                               Encouraging business ownership and entrepreneurship 
+                            </li>
+                            <li>
+                               Fostering leadership development and professional growth 
+                            </li>
+                            <li>
+                               Driving this community’s contribution to this region economic growth and prosperity 
+                            </li>
+                        </ul>
+                    </ul>
+                </blockquote>
+            </div>
+        </div>
+       
+    </div>
+    
+    <section>     
+      <!-- START THE FEATURETTES -->
+      
+      <br>
+<div class="container">
+    <h2>Our Team</h2>
+      
+      <hr class="featurette-divider" style="margin-top: 0px;">
+       <div class="row featurette">
+
+        <div class="col-md-6">
+            <figure><img class="featurette-image img-fluid mx-auto" src="img/vanessa2.jpg" alt="Generic placeholder image">
+                <figcaption><h3>Richard T. Champagne</h3></figcaption>
+             <figcaption><span class="text-muted" style="font-size:20px">Chairman</span></figcaption>
+                <p class="card-text"><a href="mailto:richard.champagne@haccm.org">richard.champagne@haccm.org</a></p>
+            </figure>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#theo" aria-expanded="false" aria-controls="theo">
+                 bio
+            </button>
+
+            <div class="collapse" id="theo">
+                <div class="card card-block">
+                <p>Richard T. Champagne, a native of Miami, Florida, is known as a rising star and a stalwart
+
+in the cause of justice, equality, and fairness among his peers. Being the son of Haitian immigrants, Mr.
+
+Champagne developed a deep appreciation for, and a strong belief in, equality and justice at an early
+
+age. Early in life, he learned of the plight and suffering that afflicted the Haitian people under the brutal
+
+dictatorship of the Duvalier Regime, knowledge that shaped his consciousness even then.</p>
+
+<p>With such civic virtues and others, which his parents had instilled in him as a young man, naturally,
+
+Mr. Champagne found the field of Criminal Justice and Law to be intriguing. He attended Florida Atlantic
+
+University (FAU) where he earned a Bachelor of Arts degree in Criminal Justice. At FAU, Mr.
+
+Champagne was Student Government Association (SGA) Vice President and Vice President of the
+
+SGA University Wide Council, which oversaw a budget of over 1.5 million dollars.</p>
+
+<p>Determined to become a positive force for social change and a guardian of our civil liberties, Mr.
+
+Champagne attended Saint Thomas University School of Law where he graduated in the top five
+
+percent in his class. He was admitted to the Florida Bar in 2008 and to the Massachusetts Bar in 2011.</p>
+
+<p>Mr. Champagne served as an Assistant Public Defender in Fort Lauderdale, Florida, providing legal
+
+representation to individuals accused of crimes, protecting defendants’ guaranteed constitutional
+
+safeguards, and making sure that our democratic principles of fairness and substantial justice that we
+
+deem sacrosanct are scrupulously followed by the State. He later became the founding and managing
+
+partner of the Champagne Law Group, P.A., with office locations in Florida and Massachusetts.</p>
+
+<p>Mr. Champagne prioritizes maintaining strong ties with the communities he serves. His commitment to
+
+engaging in community building, public service, and community organizing was most illustrated during
+
+his service as President of the Haitian Lawyers Association (HLA), a state-wide affinity bar association in
+
+Florida with over two hundred members. In this role, Mr. Champagne worked to forge relationships and
+
+build coalitions with business and community leaders, government officials and clergymen.</p>
+
+<p>Under his leadership, the HLA worked closely with representatives of the Obama Administration and
+
+with local government entities to bring relief to homeowners facing foreclosures in the 2008-2011
+
+foreclosure crisis. Together, they provided legal assistance to over eight hundred undocumented
+
+Haitians seeking legal status in the United States after the devastation caused by the 2010 earthquake.</p>
+
+<p>Mr. Champagne provides pro bono representation to small businesses and nonprofit organizations like
+
+New England Human Rights Organization, Inc. based here in Boston, and is the current treasurer for the
+
+Massachusetts Black Lawyers Association. He and his fiancée, Cassandra, are proud parents of a
+
+beautiful five-year- old girl, Sydney. The family loves traveling, boating, and swimming.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+         <figure><img class="featurette-image img-fluid mx-auto" src="staic/img/vanessa2.jpg" alt="Generic placeholder image">
+             <figcaption><h3>Vanessa Jean</h3></figcaption>
+             <figcaption><span class="text-muted" style="font-size:20px">Vice chair</span></figcaption>
+             <p class="card-text"><a href="mailto:Vanessa.Jean@haccm.org">Vanessa.Jean@haccm.org</a></p>
+         </figure>
+          
+          
+           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                 bio
+            </button>
+
+            <div class="collapse" id="collapseExample">
+                <div class="card card-block">
+                    <p>Currently, Vanessa is a Member Service Manager for Greater Boston Chamber of Commerce (GBCC) where she strives to engage and be a resource for members. She helps members leverage their membership in ways to advance their business needs. Overall, the organization is committed helping people succeed and grow professionally and drive the region's economic growth and prosperity by being a convener, voice and advocate of the business community. </p>
+                    <p>Previously, Vanessa worked as a fundraising professional at Northeastern University. In this role, she worked as a liaison between the Director of Development and key stakeholders of the university, cultivated a portfolio of gift prospects, and produce research analytics.  </p>
+
+                    <p>Prior to her experience at Northeastern, Vanessa was a Peace, Democracy, and Development Public Policy Fellow for McCormack Graduate School Center in Haiti, working at the Primature Republique d'Haiti. In this role, she planned, implemented, evaluated programs that sought to provide both immediate assistance and sustainable development initiatives in both the education and economic sector. It included overseeing budget, coordinating an international conference, provision of logistical and technical support, and the preparation of funding submissions and grant proposals. This experience in addition to her previous international experience in Puerto Rico, Dominican Republic, South Africa, and Swaziland has shaped her understanding on the importance of leadership development and capacity building in tackling social problems. By empowering local communities to make the most of their assets and meet the challenges they face, it strengthen each individual’s ability to drive social change and stimulate economic benefits. </p>
+
+                    <p>Vanessa holds a BA in Global Studies/International Relations with concentration in Management and Economics from Emmanuel College, and a graduate certificate in Gender, Leadership, and Public Policy from UMASS Boston. She spends her time travelling, dancing, writing, and exploring new adventures with her vibrant daughter, Victoria Rose Jean-Joseph. </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <hr class="featurette-divider">
+      
+       <div class="row featurette">
+        <div class="col-md-6">
+         <figure><img class="featurette-image img-fluid mx-auto" src="static/img/theo.jpg" alt="Generic placeholder image">
+         
+             <figcaption><h3>Therveland Derosier</h3></figcaption>
+             <figcaption><span class="text-muted" style="font-size:20px">Secretary</span></figcaption>
+             <p class="card-text"><a href="mailto:Stanley.FanFan@haccm.org ">Stanley.FanFan@haccm.org </a></p>
+         </figure>
+          
+          
+           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#derosier" aria-expanded="false" aria-controls="derosier">
+    bio
+  </button>
+
+<div class="collapse" id="derosier">
+  <div class="card card-block">
+    <p>Therveland (Theo) Derosier is a professional with over 10 years of experience in information Technology and made significant contributions as a leader. During his career, he has applied his proven expertise and ongoing professional development to meeting and exceeding all objectives put before him in areas such as process optimization and development, systems administration and security, relationship, and resources management.</p>
+      
+        <p>Mr. Derosier earned Bachelor’s degree in Information Technology in 2005 from Florida International University. As a fervent leadership development supporter, he was a key advisor to the Caribbean Student Association at Broward College in 2006-2015.  During such time, he worked with middle school and high school students on college readiness and worked with minority community college students on retention improvement and graduation rate improvement. While working at Broward College, Mr. Derosier was the recipient of several leaderships and community-based awards for his work. Subsequently, he obtained a Master’s degree in Management Information Systems from Nova Southeastern University in 2013. Mr. Derosier is also a recipient of several certificates in his fields of work.</p>
+      
+        <p>Mr. Derosier is a proud and devoted father of two beautiful girls, seven and four-year old. He enjoys an active lifestyle, traveling, meeting new people, experience new cultures; he is passionate about community outreach and empowerment, social and economic issues, and community-based services.</p>
+  </div>
+</div>
+        </div>
+
+        <div class="col-md-6">
+         <figure><img class="featurette-image img-fluid mx-auto" src="static/img/fanfan1.png" alt="Generic placeholder image">
+             <figcaption><h3>Stanley Fan Fan</h3></figcaption>
+             <figcaption><span class="text-muted" style="font-size:20px">Treasurer</span></figcaption>
+             <p class="card-text"><a href="mailto:Stanley.FanFan@haccm.org ">Stanley.FanFan@haccm.org </a></p>
+         </figure>
+          
+          
+           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#fanfan" aria-expanded="false" aria-controls="fanfan">
+                 bio
+            </button>
+
+            <div class="collapse" id="fanfan">
+                <div class="card card-block">
+                    <p>Stanley began his career in financial services in 2007, and joined Morgan Stanley in 2016. Prior to joining Morgan Stanley in Private Banking, Stanley was a Wealth Management Banker and Financial Solutions Advisor at Merrill Lynch where he managed over $20 million of client’s assets. He has also served as a Financial Advisor at Morgan Stanley and an Internal Wholesaler at John Hancock. Stanley is also a partner and manager of BPF Lux Transport LLC, a heavy duty fleet repair and transportation company.</p>
+
+                    <p>Stanley received his Bachelor of Science degree in Business Administration from Framingham State University. He currently holds the Finra series 7, 66, 31, Massachusetts Life, Accident and Health licenses and passed the CFA (Chartered Financial Analyst) level 1.  He and his family reside in Quincy, Massachusetts. </p>
+
+                </div>
+            </div>
+        </div>
+      </div> 
+      
+
+
+
+      <hr class="featurette-divider">
+
+    
+      <!-- /END THE FEATURETTES -->
+            
+        </div>
+        
+    </section>
+     <img class="second-slide" src="static/img/finicialbay.jpg" alt="Second slide">
+    
+    
+ <!-- FOOTER -->
+      <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <!--<script src="../../dist/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

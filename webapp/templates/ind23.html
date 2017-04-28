@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>HACCM</title>
+
+    <!-- Bootstrap core CSS -->
+   <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/carousel.css" rel="stylesheet">
+    <style>
+        /*a {font-size: 12px}*/
+        .featurette-heading { font-size: 30px;}
+        #footer-main {
+    background: #222;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2.5rem 0;
+}
+      
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Organization</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'test' %}"">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'event' %}">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'resource' %}"">Resource</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+        <!--<form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="first-slide" src="static/img/finacial%20district.jpg" alt="First slide">
+          <!--https://c1.staticflickr.com/4/3336/5819915250_4966cb26f3_b.jpg -->
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block text-left">
+              <h1> Headline 1 </h1>
+              <p>Whatever you want to add.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide" src="static/img/finicialbay.jpg" alt="Second slide">
+          <!--http://cdn.c.photoshelter.com/img-get2/I0000y827goYR3ks/fit=1000x750/Photos-of-Boston-Juergen-Roth-19.jpg -->
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Headline 2</h1>
+              <p>Whatever you want to add.(FYI I can add more)</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="static/img/boston.jpg" alt="Third slide">
+          <!--https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_355,q_65,w_768/v1/clients/boston/header_aboutboston_neighborhoods_downtown_6f653189-d3bd-4b8e-a160-fd028ec06c89.jpg -->
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block text-right">
+              <h1>Events or membership or </h1>
+              <p>Whatever you want to add.(F</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Join</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>About US</h2>
+          <p>Community service excellence: Empowering communities through learning centered and support iniatives that will continue elevating and improving Community standards</p>
+          <p><a class="btn btn-secondary" href="{% url 'about' %}" role="button">Learn more &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Membership</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-secondary" href="{% url 'test' %}"" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Events</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-secondary" href="{% url 'event' %}"" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      
+      <!-- FOOTER -->
+        <footer id="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>uncopyright 2015. do what you want.</p>
+                    <p>coded by <a href="http://bradhussey.ca/">brad</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li><a href="">home</a></li>
+                        <li><a href="">what we do</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">latest</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">twitter</a></li>
+                        <li><a href="">youtube</a></li>
+                        <li><a href="">linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h6>a tiny header</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam expedita fugit saepe, eum ad, quam! Eum magnam suscipit nulla ullam aliquam consectetur provident, nihil consequuntur porro labore asperiores corrupti esse?</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <!--<script src="../../dist/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
